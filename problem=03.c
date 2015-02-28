@@ -33,7 +33,7 @@ main(void)
 
 
 
-	for(k=2, i = 6; k <= 200001 ;i = i + 6)
+	for(k=2, i = 6; primes[k] * primes[k] <= 600851475143 ;i = i + 6)
 	{
 		if(IS_PRIME(i-1))
 		{
@@ -45,10 +45,12 @@ main(void)
 			primes[++k] = i+1;
 		}
 	}
-
+	printf("%d : %d\n",k,primes[k]);
 
 	scanf("%llu",&n);
 	
+
+	// BINARY SEARCH CAN BE USED INSTEAD 
 	for(i=1; i<=k && primes[i] <= n; ++i)
 	{
 		if( n % primes[i] == 0)
