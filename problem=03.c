@@ -45,10 +45,7 @@ main(void)
 			primes[++k] = i+1;
 		}
 	}
-	printf("%d : %d\n",k,primes[k]);
-
 	scanf("%llu",&n);
-	
 
 	// BINARY SEARCH CAN BE USED INSTEAD 
 	for(i=1; i<=k && primes[i] <= n; ++i)
