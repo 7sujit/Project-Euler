@@ -27,7 +27,9 @@ int main(void)
 
 	int i,j,k,n;
 
-	bool_str = (char *) malloc (PRIME_RANGE + 1 *  sizeof(char));
+	bool_str = (char *) malloc ( (PRIME_RANGE + 1) *  sizeof(char));
+	
+	/* initialising the bool_str */
 	for(i = 0; i < PRIME_RANGE; bool_str[i]=true,++i);
 	bool_str[0] = bool_str[1] = false;
 	bool_str[PRIME_RANGE] = '\0';
@@ -44,8 +46,8 @@ int main(void)
 		}	
 	}
 
-	print_prime_numbers();
-
-	//puts(bool_str);
+	print_prime_numbers();	// prints all prime numbers in range
+	//puts(bool_str);	// prints bool_str
+	
 	return EXIT_SUCCESS;
 }
