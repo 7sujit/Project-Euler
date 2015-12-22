@@ -8,6 +8,8 @@
 //#define SQRT_MAX 1000
 //#define PRIME_RANGE 1000000
 
+/* BEWARE OF GIVING LARGE RANGE NUMBERS AS IT MIGHT TAKE A LONG TIME */
+
 char *bool_str;
 static const char true = '1';
 static const char false = '0';
